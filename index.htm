@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Band-Aid Beer</title>
+		<!-- Reset first, order matters -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<!-- Halant / Band-Aid Font-->
+		<link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<!-- Mouse Memories / BEER Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+		<!-- Nunito Sans / Body Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Lora / Solgan Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+		<h1 class="hidden">Home Page Layout</h1>
+		
+		<!-- Home Page Top -->
+		<div id="container">
+			<header class="mainHeader">
+				<div id="logo"></div>
+				<div id="brandName">
+					<h2><span id="brandNameSize">Band-Aid <span id="beerDesign"> BEER</span></span></h2>
+				</div>
+				<nav id="mainNav">
+					<h2 class="hidden">Main Navigation</h2>
+					<ul>
+						<li><a href="index.htm">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="advertisements.html">Advertisements</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<h2 class="hidden">Home Page Image</h2>
+				<div id="mainImage">
+					<img class="positionRelative" src="images/main_image.jpg" alt="Beer Image">
+					<img class="positionAbsoluteMainImage" src="images/beer_animation.png" alt="Beer Bottle" height="300" width="300">
+					<div class="centered40" id="solgan">BEER Makes Everything BETTER.</div>
+					<a href="#" id="exploreBtn">Explore</a>
+				</div>
+			</section>
+
+			<!-- About Us Section -->
+			<section class="sectionContainer">
+				<h2 class="hidden">Quick View About Us</h2>
+				<!-- Left Side -->
+				<div class="split black">
+					<div id="aboutUsLeftSide">
+						<h2 class="beerColour">About Us</h2><br>
+						<p>In 2010, we set out to brew beer with equal parts flavour and sessionability. During a decade, we have operated over 5 retail stores, served 20,000 licensed customers, and 62 retail partners. Today, Band-Aid Beer has a family of award-winning beers, a community of passionate fans, and a belief of never looking back.</p><br>
+						<a href="about.html" class="showMoreBtn">Show More</a>
+					</div>
+				</div>
+				<div class="aboutUsRightContainer">
+					<div class="aboutUsDescription">
+						<h2 class="hidden">Quality Ingredients</h2>
+						<img class="positionRelative" src="images/quality_ingredients.jpg" alt="Quality Ingredients Image">
+						<img class="positionAbsolute" src="images/quality_ingredients_icon.png" alt="Quality Ingredients Icon" width="40" height="40">
+						<div>
+							<h3 class="centered descriptionTitle">Quality Ingredients</h3>
+							<p class="centered75 descriptionText">Our brand makes beer using the best barley harvested in southern Canada.</p>
+						</div>
+					</div>
+					<div class="aboutUsDescription">
+						<h2 class="hidden">Natural Sunshine</h2>
+						<img class="positionRelative" src="images/natural_sunshine.jpg" alt="Natural Sunshine Image">
+						<img class="positionAbsolute" src="images/natural_sunshine_icon.png" alt="Natural Sunshine Icon" width="40" height="40">
+						<div>
+							<h3 class="centered descriptionTitle">Natural Sunshine</h3>
+							<p class="centered75 descriptionText">It uses natural sunlight to make it taste more than the best.</p>
+						</div>
+					</div>
+				</div>
+				<div class="aboutUsRightContainer">
+					<div class="aboutUsDescription">
+						<h2 class="hidden">Frementation</h2>
+						<img class="positionRelative" src="images/frementation.jpg" alt="Frementation Image">
+						<img class="positionAbsolute" src="images/frementation_icon.png" alt="Frementation Icon" width="40" height="40">
+						<div>
+							<h3 class="centered descriptionTitle">Frementation</h3>
+							<p class="centered75 descriptionText">Ferment at high temperatures for at least a week, and complete the best taste after two fermentation periods.</p>
+						</div>
+					</div>
+					<div class="aboutUsDescription">
+						<h2 class="hidden">Unrivalled Taste</h2>
+						<img class="positionRelative" src="images/unrivalled_taste.jpg" alt="Unrivalled Taste Image">
+						<img class="positionAbsolute" src="images/unrivalled_taste_icon.png" alt="Unrivalled Taste Icon" width="40" height="40">
+						<div>
+							<h3 class="centered descriptionTitle">Unrivalled Taste</h3>
+							<p class="centered75 descriptionText">Our unique and savory taste is incomparable to other brands.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Products Section -->
+			<section class="sectionContainer">
+				<h2 class="hidden">Quick View Our Products</h2>
+				<div class="productContainerHome">
+					<h2 class="hidden">Spring Edition</h2>
+						<img class="product image" src="images/beer_spring.png" alt="Spring Edition Beer Image">
+						<div class="productName green">Spring Edition<br><span class="price">$4.99</span></div>
+				</div>
+				<div class="productContainerHome">
+					<h2 class="hidden">Summer Edition</h2>
+					<img class="product" src="images/beer_summer.png" alt="Summer Edition Beer Image">
+						<div class="productName darkOrange">Summer Edition<br><span class="price">$4.99</span></div>
+				</div>
+				<div class="productContainerHome">
+					<h2 class="hidden">Fall Edition</h2>
+					<img class="product" src="images/beer_fall.png" alt="Fall Edition Beer Image">
+						<div class="productName red">Fall Edition<br><span class="price">$4.99</span></div>
+				</div>
+				<div class="productContainerHome">
+					<h2 class="hidden">Winter Edition</h2>
+					<img class="product" src="images/beer_winter.png" alt="Winter Edition Beer Image">
+						<div class="productName dodgerBlue">Winter Edition<br><span class="price">$4.99</span></div>
+				</div>
+			</section>
+
+			<!-- Advertisements Section -->
+			<section class="sectionContainerBlack">
+				<h2 class="hidden">Quick View Advertisements</h2>
+				<div class="split">
+						<img id="advertisementsImage" src="images/advertisements_image.jpg" alt="Advertisements Image">
+				</div>
+				<div class="split">
+					<div id="advertisementsDescription">
+						<h2 class="beerColour">Advertisements</h2><br>
+						<p>To all bear lovers, we have a limited time offer for you! Buy two get one free for all beers in our store. This offer will expire on Dec 31, 2020. Browse our Promotion page to explore more information.</p><br>
+						<a href="#" class="showMoreBtn">Learn More</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="mainFooter">
+				<h2 class="hidden">Footer Navigation</h2>
+				<section id="footerLogoContainer">
+					<h2 class="hidden">Logo Image</h2>
+					<img src="images/logo_fip.svg" alt="Logo Image">
+				</section>
+				<section id="footerNavContainer">
+					<h2 class="hidden">Information Links</h2>
+					<div class="footerNav"><h4>Information</h4>
+						<ul id="information">
+							<li><a href="about.html">About</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="advertisements.html">Advertisements</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footerNav"><h4>Legal & Policies</h4>
+						<ul id="legalPolicies">
+							<li><a href="#">Accessibility</a></li>
+							<li><a href="#">Promotions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footerNav"><h4>Band-Aid Beer</h4>
+						<ul id="bandAidBeer">
+							<li>(0)203 123 4567</li>
+							<li>band-aid@gmail.com</li>
+							<li>94 River Road, London,</li>
+							<li>Canada</li>
+						</ul>
+					</div>
+				</section>
+			</footer>
+
+			<!-- Soical Media & Copy Right -->
+			<section id="socialMediaContainer">
+				<h2 class="hidden">Social Media & Copyright</h2>
+				<div>
+					<div id="socialMedia">
+						<div class="socialMediaIcon">
+							<a href="#"><img src="images/facebook_icon.png" alt="Facebook Icon" width="22" height="22"></a>
+						</div>
+						<div class="socialMediaIcon">
+							<a href="#"><img src="images/twitter_icon.png" alt="Twitter Icon" width="22" height="22"></a>
+						</div>
+						<div class="socialMediaIcon">
+							<a href="#"><img src="images/instagram_icon.png" alt="Instagram Icon" width="22" height="22"></a>
+						</div>
+						<div class="socialMediaIcon">
+							<a href="#"><img src="images/google_icon.png" alt="Google Icon" width="22" height="22"></a>
+						</div>
+					</div>
+						<div id="copyright">
+	            			<p>&copy; 2020 Band-Aid Beer</p>
+	            		</div>
+				</div>						
+			</section>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,995 @@
+body {
+	font-size: 12px;
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+	position: relative;
+	background-image: linear-gradient(to bottom right, #FECA31, #EF5F43);
+}
+
+p {
+	font-size: 13px;
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 0.5px;
+	line-height: 1.6;
+	color: white;
+}
+
+h2 {
+	font-family: 'Halant', serif;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Using different font for BEER */
+#beerDesign {
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 32px;
+	color: #ffba43;
+	letter-spacing: 1.5px;
+}
+
+#messageFontDesign {
+	font-style: normal;
+	text-transform: uppercase;
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 36px;
+	letter-spacing: 3px;
+}
+
+#messageFontDesign:hover {
+	color: #ffba43;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Centered the text, top 40% */
+.centered40 {
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered55 {
+	position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered75 {
+	position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Colour */
+.red {
+	color: red;
+}
+
+.darkOrange {
+	color: darkorange;
+}
+
+.green {
+	color: green;
+}
+
+.dodgerBlue {
+	color: dodgerblue;
+}
+
+.purple {
+	color: purple;
+}
+
+.pink {
+	color: mediumvioletred;
+}
+
+.black {
+	background-color: black;
+}
+
+.blackFont {
+	color: black;
+}
+
+.beerColour {
+	color: #f6c101;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .25s ease;
+  backface-visibility: hidden;
+}
+
+/* --------------------Home Page-------------------- */
+/* Body */
+#container {
+	width: 960px;
+	margin: 0 auto; /*centers the container*/
+}
+
+
+/* Header */
+.mainHeader {
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+}
+
+#mainNav {
+	height: 39px;
+	width: 475px;
+	/*background-color: #555434;*/
+	margin-right: auto;
+	margin-top: 12px;
+	margin-right: 13px;
+}
+
+
+#mainNav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#mainNav ul li {
+	margin-top: 14px;
+	margin-left: 10px;
+}
+
+#mainNav ul li a {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600; /* Semi-bold 600 */
+	text-decoration: none; /* remove underline */
+	text-transform: uppercase;
+	transition: all .25s ease-in-out;
+	padding: 9px;
+}
+
+#mainNav ul li a:hover {
+	color: #333;
+	background-color: #ffba43; /* Beer colour */
+}
+
+/* Keep it for brand font Design 
+#logo {
+	height: 39px;
+	width: 39px;
+	background-color: #f0aeae;
+	margin-right: 10px;
+	margin-top: 13px;
+	margin-left: 13px;
+} */
+
+#brandName {
+	height: 34px;
+	width: 350px;
+	margin-right: auto;
+	margin-top: 12px;
+	margin-left: 20px;
+	padding-top: 5px;
+
+}
+
+#brandNameSize {
+	font-family: 'Halant', serif;
+	font-weight: 500;
+	font-size: 32px;
+}
+
+#mainImage {
+	height: 475px;
+	background-color: #333333;
+	position: relative;
+	text-align: center;
+  	color: white;
+  	border-bottom: 5px #ffba43 solid;
+  	border-top: 5px #ffba43 solid;
+  	border-bottom: 5px #ffba43 solid;
+}
+
+#mainImage #exploreBtn {
+	text-decoration: none;
+ 	text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ffba43;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 12px 24px;
+    margin: 2px;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+#mainImage #exploreBtn:hover {
+	background-color: #EF5F43;
+	color: white;
+}
+
+
+#solgan {
+	font-family: 'Lora', serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 28px;
+	letter-spacing: 1.5px;
+}
+
+
+/* About Us Section*/
+.sectionContainer {
+	height: 300px;
+	background-color: #FAF8F8;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	border-bottom: 5px #ffba43 solid;
+	position: relative;
+}
+
+.split {
+	width: 480px;
+	height: 300px;
+	/*background-color: #3c4209;*/
+}
+
+#aboutUsLeftSide {
+	width: 320px;
+	height: 195px;
+	margin: 0 auto;
+	margin-top: 38px;
+	position: relative;
+}
+
+.showMoreBtn {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out;
+  position: absolute;
+  background-color: #ffba43;
+  color: black;
+  font-weight: 00;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 12px 30px;
+  margin: 2px;
+  border: solid white 2px;
+  cursor: pointer;
+  font-weight: 700;
+
+}
+
+.showMoreBtn:hover {
+	background-color: #EF5F43;
+	color: white;
+}
+
+
+.aboutUsRightContainer {
+	width: 240px;
+	height: 300px;
+	background-color: #173f5f;
+}
+
+.aboutUsDescription {
+    width: 240px;
+    height: 150px;
+    position: relative;
+ 	text-align: center;
+  	color: white;
+}
+
+.positionRelative {
+	position: relative;
+}
+
+.positionAbsoluteMainImage {
+	height: 475;
+	position: absolute;
+	top: 30%;
+  	left: -5%;
+  	animation: bounce 3s cubic-bezier(0.280, 0.840, 0.420, 1) 0s infinite;
+}
+
+@keyframes bounce {
+	0% {transform: scale(1, 1)	translateX(0) translateY(0);}
+	10% {transform: scale(1.1, 0.9)	translateX(0) translateY(10%);}
+	25% {transform: scale(0.9, 1.1)	translateX(0) translateY(-30%);}
+	35% {transform: scale(1.1, 0.9)	translateX(0) translateY(5%);}
+	50% {transform: scale(1, 1)	translateX(0) translateY(0);}
+	55% {transform: scale(1, 1)	translateX(0) translateY(0);}
+	}
+
+.positionAbsolute {
+	position: absolute;
+	top: 10%;
+  	left: 43%;
+}
+
+.descriptionTitle {
+	font-family: 'Halant', serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #f6c101;
+}
+
+.descriptionText {
+	width: 210px;
+	height: 40px;
+	margin: auto;
+	position: absolute;
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+
+/* Our Products Section */
+.productContainerHome {
+	display: block;
+	width: 173px;
+	height: 225px;
+	margin: 0 auto;
+	margin-top: 49px;
+	position: relative;
+  	text-align: center;
+}
+
+.product {
+/*	display: flex;*/
+	width: 173px;
+	height: 164px;
+	margin: 0 auto;
+	position: relative;
+	transition: transform .25s;
+	opacity: 0.6; 
+}
+
+.product:hover {
+  	opacity: 1;
+  	transform: scale(1.15);
+}
+
+.productName {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 13px;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.price {
+    font-size: 13px;
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 0.5px;
+	color: black;
+}
+
+
+
+/* Advertisements */
+.sectionContainerBlack {
+	height: 300px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	position: relative;
+}
+
+#advertisementsImage {
+	width: 359px;
+	height: 216px;
+	background-color: white;
+	margin-left: 51px;
+ 	margin-top: 33px;
+ 	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#advertisementsDescription {
+	width: 359px;
+	height: 216px;
+	margin: auto;
+ 	margin-top: 42px;
+}
+
+
+
+/* Footer */
+#mainFooter {
+	height: 295px;
+	background-color: #FAF8F8;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	border-top: 5px #ffba43 solid;
+	border-bottom: 5px #ffba43 solid;
+}
+
+#footerLogoContainer {
+	width: 213px;
+	background-color: #FAF8F8;
+	margin-top: 65px;
+	margin-left: 30px;
+}
+
+#footerNavContainer {
+	width: 747px;
+	background-color: #FAF8F8;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.footerNav {
+	width: 192px;
+	height: 165px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#information {
+	width: 192px;
+	height: 129px;
+	line-height: 1.8;
+	margin-top: 18px;
+}
+
+#information li a {
+	color: #EF5F43;
+	font-size: 15px;
+	text-decoration: none; /* remove underline */
+	transition: all .25s ease-in-out;
+	
+}
+
+#information li a:hover {
+	color: black;
+}
+
+#legalPolicies {
+	width: 192px;
+	height: 129px;
+	line-height: 1.8;
+	margin-top: 18px;
+}
+
+#legalPolicies li a {
+	color: #EF5F43;
+	font-size: 15px;
+	text-decoration: none; /* remove underline */
+	transition: all .25s ease-in-out;
+	
+}
+
+#legalPolicies li a:hover {
+	color: black;
+}
+
+#bandAidBeer {
+	width: 192px;
+	height: 129px;
+	line-height: 1.8;
+	margin-top: 18px;
+}
+
+#bandAidBeer li {
+	color: black;
+	font-size: 15px;
+	text-decoration: none; /* remove underline */
+}
+
+
+
+/* Soical Media & Copyright*/
+#socialMediaContainer {
+	height: 83px;
+	background-color: black;
+	display: flex;
+
+}
+
+#socialMedia {
+	width: 840px;
+	height: 24px;
+	margin-left: 60px;
+	margin-top: 15px;
+	display: block;
+	padding-bottom: 10px;
+	border-bottom: white 0.5px solid;
+}
+
+.socialMediaIcon {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+	margin-right: 8px;
+}
+
+#copyright {
+	width: 840px;
+	height: 11px; 
+	margin-left: 60px;
+	margin-top: 8px;
+	display: block;
+}
+
+
+
+
+/* --------------------Contact Page-------------------- */
+#mainImageContact {
+	height: 325px;
+/*	background-color: pink;*/
+	position: relative;
+	text-align: center;
+  	color: white;
+  	border-top: 5px #ffba43 solid;
+  	border-bottom: 5px #ffba43 solid;
+}
+
+#socialMediaContainerContact {
+	height: 150px;
+	background-color: black;
+	display: flex;
+	border-bottom: 5px #ffba43 solid;
+}
+
+#solganContact {
+	font-family: 'Lora', serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 26px;
+	letter-spacing: 1.5px;
+	line-height: 2;
+}
+
+.socialMediaLinkA {
+	width: 240px;
+	height: 150px;
+	background-color: #141322;
+	position: relative;
+}
+
+.socialMediaLinkA:hover {
+	opacity: 0.6;
+}
+
+.socialMediaLinkB {
+	width: 240px;
+	height: 150px;
+	background-color: #747787;
+	position: relative;
+}
+
+.socialMediaLinkB:hover {
+	opacity: 0.6;
+}
+
+.socialMediaIconContact {
+	margin-left: 105px;
+	margin-top: 20px;
+}
+
+.descriptionTitleContact {
+	font-family: 'Halant', serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #f6c101;
+	margin-top: 5px;
+}
+
+.descriptionTextContact {
+	width: 210px;
+	height: 40px;
+	margin: auto;
+	margin-top: 5px;
+	position: absolute;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.sectionContainerContact {
+	height: 450px;
+	background-color: #dedad7;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.splitContact {
+	width: 480px;
+	height: 450px;
+	background-color: #FAF8F8;
+}
+
+.splitContactB {
+	width: 480px;
+	height: 450px;
+	background-color: black;
+}
+
+/* Contact Form */
+form { 
+	max-width:420px; 
+	margin:50px auto; 
+}
+
+.input {
+  color:white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #ffba43;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  background:#ffba43;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:black;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.25s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover {
+	background:#009f29;
+	color: white;	 
+}
+
+/* Map Section */
+#sectionContainerMap {
+	height: 300px;
+	border-top: 5px #ffba43 solid;
+}
+
+
+
+
+
+/* --------------------Products Page-------------------- */
+.ingredientsContainer {
+	width: 180px;
+/*	background-color: red;*/
+}
+
+.plusContainer {
+	width: 80px;
+	background-color: #141322;
+}
+
+.ingredientsIcon {
+	width: 180px;
+	height: 125px;
+	background-color: #141322;
+}
+
+.ingredientsText {
+	width: 180px;
+	height: 25px;
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1.5px;
+	background-color: #141322;
+	line-height: 0;
+}
+
+/* Products Section */
+#productSectionContainer {
+	height: 750px;
+	/*display: flex;
+	flex-direction: column;*/
+}
+
+.productSection {
+	height: 375px;
+	background-color: black;
+	display: flex;
+}
+
+.productContainer {
+	width: 273px;
+	height: 332px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+  	text-align: center;
+	background-color: #FAF8F8;
+	margin-top: 2%;
+}
+
+.productImage {
+	width: 273px;
+	height: 235px;
+}
+
+.productDescription {
+	width: 273px;
+	height: 57px;
+/*	background-color: green;*/
+}
+
+.addToCart {
+	width: 273px;
+	height: 37px;
+	background-color: #ffba43;
+}
+
+.addToCart > h3 {
+	color: black;
+	font-size: 14px;
+	padding-top: 12px;
+	letter-spacing: 1px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.addToCart:hover {
+	background-color: #EF5F43;
+}
+
+.productDescription {
+	font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Mouse Memoirs', sans-serif;
+    margin-top: 3px;
+}
+
+.priceProduct {
+	font-size: 15px;
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 0.5px;
+	color: black;
+}
+
+
+
+
+
+/* Advertisements Page */
+#announcement {
+	width: 960px;
+	height: 150px;
+	font-family: 'Nunito Sans', sans-serif;
+	text-align: center;
+	margin-top: 25%;
+	font-size: 18px;
+}
+
+#announcement a {
+	text-decoration-line: underline;
+	color: white;
+	font-weight: 700;
+}
+
+#announcement a:hover {
+	color: #ffba43;
+}
+
+.sectionContainerAdvertisements {
+	height: 750px;
+	background-color: pink;
+	position: relative;
+}
+
+#solganAdvertisements {
+	font-family: 'Lora', serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 26px;
+	letter-spacing: 1.5px;
+	line-height: 2;
+}
+
+#shopNowBtn a{
+	text-decoration: none;
+ 	text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #EF5F43;
+    color: #FECA31;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 12px 24px;
+    margin: 2px;
+    border: solid white 2px;
+}
+
+#shopNowBtn a:hover{
+	background-color: #033232;
+	color: #EF5F43;
+	border: solid #033232 2px;
+}
+
+
+
+
+
+
+/* About Page */
+
+#announcementAbout {
+	font-family: 'Nunito Sans', sans-serif;
+	width: 960px;
+	height: 150px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 2.5;
+	position: relative;
+/*	background-color: ;*/
+	background-image: linear-gradient(to bottom right, #272D46, #172D41);
+}
+
+#quote {
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: italic;
+}
+
+#learnMoreBtnAbout a {
+	font-size: 10px;
+ 	text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 2px 19px;
+    margin: 2px;
+    border: solid white 2px;
+}
+
+#learnMoreBtnAbout a:hover {
+ 	background-color: white;
+ 	color: #172D41;
+}
+
+#aboutUsContainer {
+	width: 564px;
+	height: 389px;
+	margin: 0 auto;
+	margin-top: 3.25%;
+	position: relative;
+}
+
+#aboutUsImage {
+	width: 564px;
+	height: 163px;
+	background-color: black;
+}
+
+#aboutUsContent {
+	width: 474px;
+	height: 166px;
+	background-color: black;
+	padding-top: 60px;
+	align-content: center;
+	padding-right: 45px;
+	padding-left: 45px;
+}
+
+#sectionContainerIngredients {
+	height: 300px;
+	border-top: 5px #ffba43 solid;
+	background-image: linear-gradient(to bottom right, #272D46, #172D41);
+	position: relative;
+}
+
+#ingredientsAbout {
+	width: 565px;
+	height: 300px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.individualIngredient {
+	width: 565px;
+	height: 75px;
+	background-image: linear-gradient(to bottom right, #272D46, #172D41);
+	display: flex;
+}
+
+.ingredientsIconAbout {
+	width: 75px;
+	height: 75px;
+	display: inline;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.ingredientsContent {
+	width: 490px;
+	height: 75px;
+	background-image: linear-gradient(to bottom right, #272D46, #172D41);
+	line-height: 0;
+}
+
+.ingredientTitle {
+	font-family: 'Halant', serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #f6c101;
+	margin-top: 19px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.ingredientDesciption {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
